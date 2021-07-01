@@ -42,8 +42,9 @@ const Title = styled.h1`
 const Header = props => {
   return (
     <Container height={props.height}>
-      <ShieldPicture></ShieldPicture>
-      <Title>Board Game</Title>
+      <Title>Medieval </Title>
+        <ShieldPicture></ShieldPicture>
+        <Title> Warfare</Title>
     </Container>
   );
 };

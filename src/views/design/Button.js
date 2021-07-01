@@ -18,4 +18,5 @@ export const Button = styled.button`
   background: #A89D2A;
   transition: all 0.8s ease;
   color: #800032;
+  overflow: hidden;
 `;
