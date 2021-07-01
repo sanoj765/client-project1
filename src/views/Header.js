@@ -10,15 +10,15 @@ import { ReactLogo } from "./ReactLogo";
  */
 const Container = styled.div`
   height: ${props => props.height}px;
-  background: ${props => props.background};
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #800032;
 `;
 
 const Title = styled.h1`
   font-weight: bold;
-  color: white;
+  color: #A89D2A;
   text-align: center;
 `;
 /**
@@ -33,7 +33,6 @@ const Header = props => {
   return (
     <Container height={props.height}>
       <Title>SoPra FS21 rocks with React!</Title>
-      <ReactLogo width={60} height={60} />
     </Container>
   );
 };
