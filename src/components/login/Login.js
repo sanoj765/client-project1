@@ -24,7 +24,6 @@ const Form = styled.div`
   font-weight: 300;
   padding-left: 37px;
   padding-right: 37px;
-  border-radius: 5px;
   background: rgb(0, 0, 0, 0.6);
   transition: opacity 0.5s ease, transform 0.5s ease;
 `;
@@ -37,7 +36,6 @@ const InputField = styled.input`
   padding-left: 15px;
   margin-left: -4px;
   border: none;
-  border-radius: 20px;
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.2);
   color: #800032;

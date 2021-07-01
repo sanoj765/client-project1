@@ -24,7 +24,6 @@ const Form = styled.div`
   font-weight: 300;
   padding-left: 37px;
   padding-right: 37px;
-  border-radius: 5px;
   background: rgb(0, 0, 0, 0.6);
   transition: opacity 0.5s ease, transform 0.5s ease;
 `;
@@ -37,7 +36,6 @@ const InputField = styled.input`
   padding-left: 15px;
   margin-left: -4px;
   border: none;
-  border-radius: 20px;
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.2);
   color: #800032;
@@ -46,6 +44,13 @@ const InputField = styled.input`
 const Label = styled.label`
   color: #800032;
   text-shadow: 0.5px 0.5px 1px #800032;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+`;
+
+const SmallLabel = styled.label`
+  color: #800032;
+  font-size: 9pt;
   margin-bottom: 10px;
   text-transform: uppercase;
 `;
@@ -155,6 +160,7 @@ class Register extends React.Component {
                 Register
               </Button>
             </ButtonContainer>
+            <SmallLabel>You already have an account? Click here!</SmallLabel>
           </Form>
         </FormContainer>
       </BaseContainer>

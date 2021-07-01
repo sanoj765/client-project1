@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactLogo } from "./ReactLogo";
+import shieldImage from "./medshieldYellow.png";
 
 /**
  * Using styled-components you can visual HTML primitives and use props with it!
@@ -8,6 +8,16 @@ import { ReactLogo } from "./ReactLogo";
  * Using styled-components, you can have styling conditions using the following syntax: ${props => ...}
  * https://www.styled-components.com/
  */
+const ShieldPicture = styled.div`
+  background-image: url(${shieldImage});
+  background-position: center;
+  height: 100%;
+  width: 6%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow:auto;
+`;
+
 const Container = styled.div`
   height: ${props => props.height}px;
   display: flex;
@@ -32,7 +42,8 @@ const Title = styled.h1`
 const Header = props => {
   return (
     <Container height={props.height}>
-      <Title>SoPra FS21 rocks with React!</Title>
+      <ShieldPicture></ShieldPicture>
+      <Title>Board Game</Title>
     </Container>
   );
 };

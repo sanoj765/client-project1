@@ -8,6 +8,8 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   background-image: url("background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 input,
