@@ -48,6 +48,20 @@ const Label = styled.label`
   text-transform: uppercase;
 `;
 
+const SmallLabel = styled.button`
+  color: #A89D2A;
+  font-size: 9pt;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+`;
+
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -103,6 +117,10 @@ class Login extends React.Component {
     }
   }
 
+  toRegister(){
+    this.props.history.push(`/register`);
+  }
+
   /**
    *  Every time the user enters something in the input field, the state gets updated.
    * @param key (the key of the state for identifying the field that needs to be updated)
@@ -135,7 +153,7 @@ class Login extends React.Component {
                 this.handleInputChange('username', e.target.value);
               }}
             />
-            <Label>Name</Label>
+            <Label>Password</Label>
             <InputField
               placeholder="Enter here.."
               onChange={e => {
@@ -153,6 +171,11 @@ class Login extends React.Component {
                 Login
               </Button>
             </ButtonContainer>
+            <SmallLabel
+                onClick={() => {
+                  this.toRegister();
+                }}
+            >You don't have an account? Click here!</SmallLabel>
           </Form>
         </FormContainer>
       </BaseContainer>

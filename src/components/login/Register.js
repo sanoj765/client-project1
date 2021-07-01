@@ -48,11 +48,18 @@ const Label = styled.label`
   text-transform: uppercase;
 `;
 
-const SmallLabel = styled.label`
-  color: #800032;
+const SmallLabel = styled.button`
+  color: #A89D2A;
   font-size: 9pt;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  cursor: pointer;
+  display: inline-block;
+  background: none;
 `;
 
 const ButtonContainer = styled.div`
@@ -110,6 +117,10 @@ class Register extends React.Component {
     }
   }
 
+  toLogin(){
+    this.props.history.push(`/login`);
+  }
+
   /**
    *  Every time the user enters something in the input field, the state gets updated.
    * @param key (the key of the state for identifying the field that needs to be updated)
@@ -160,7 +171,11 @@ class Register extends React.Component {
                 Register
               </Button>
             </ButtonContainer>
-            <SmallLabel>You already have an account? Click here!</SmallLabel>
+            <SmallLabel
+                onClick={() => {
+                  this.toLogin();
+                }}
+            >You already have an account? Click here!</SmallLabel>
           </Form>
         </FormContainer>
       </BaseContainer>
