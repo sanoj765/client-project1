@@ -17,11 +17,19 @@ const CenterContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   background-color: red;
+  min-height: 100vh;
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  z-index: -2;
+  padding-top: 100px;
+  max-height: 100%;
 `;
 
 const Container = styled(BaseContainer)`
   color: white;
   text-align: center;
+  max-height: 100%;
 `;
 
 const Users = styled.ul`
