@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import shieldImage from "./medshieldYellow.png";
+import ausloggenImage from "./ausloggen.png";
+import HomeScreen from "../components/game/HomeScreen";
 
 /**
  * Using styled-components you can visual HTML primitives and use props with it!
@@ -10,11 +12,11 @@ import shieldImage from "./medshieldYellow.png";
  */
 const ShieldPicture = styled.div`
   background-image: url(${shieldImage});
-  background-position: center;
   height: 100%;
   width: 6%;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
   overflow:auto;
 `;
 
@@ -31,6 +33,7 @@ const Title = styled.h1`
   color: #A89D2A;
   text-align: center;
 `;
+
 /**
  * This is an example of a Functional and stateless component (View) in React. Functional components are not classes and thus don't handle internal state changes.
  * Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
